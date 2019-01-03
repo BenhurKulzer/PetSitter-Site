@@ -2576,7 +2576,7 @@ a:hover {
 
 .st-container {
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .st-pusher {
@@ -20502,7 +20502,7 @@ body {
     position: relative;
     z-index: 0;
     background: #FFF;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .body-wrap.body-boxed {
