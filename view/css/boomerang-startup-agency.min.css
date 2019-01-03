@@ -2576,7 +2576,7 @@ a:hover {
 
 .st-container {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .st-pusher {
@@ -11425,7 +11425,7 @@ ul.list-border--dotted>li:last-child {
 }
 
 .mask-base-1--style-1 {
-    background: rgba(109, 14, 177, 0.9)
+    background: #e7bdb1f2;
 }
 
 .mask-base-1--style-2 {
@@ -20499,10 +20499,10 @@ body {
 }
 
 .body-wrap {
-    position: relative;
+    /* position: relative; */
     z-index: 0;
     background: #FFF;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .body-wrap.body-boxed {
