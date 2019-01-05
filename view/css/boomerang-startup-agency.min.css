@@ -1257,15 +1257,10 @@
 
 @media (min-width: 992px) {
     .navbar-nav .dropdown-menu {
-        min-width: 220px;
-        padding: 0 0.5rem;
-        margin: 0;
+        min-width: 200px;
         text-align: left;
-        border: 0;
-        border-top: 0;
-        border-radius: 2px;
-        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
-        -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08)
+        border-radius: 6px;
+        box-shadow: 3px 3px #00000045;
     }
     .navbar-nav .dropdown-menu-sm {
         min-width: 360px !important
@@ -2429,69 +2424,26 @@ a:hover {
 
 .btn-back-to-top {
     display: inline-block;
-    height: 40px;
-    width: 40px;
     position: fixed;
     bottom: 40px;
     right: 10px;
-    text-align: center;
-    line-height: 40px;
-    background: #e7bdb1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    border-radius: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-    transition: opacity 0.3s 0s, visibility 0s 0.3s
+
+    animation: whats 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: infinite;
 }
 
-.btn-back-to-top:before {
-    font-family: "Ionicons";
-    content: "\f3d8";
-    display: block;
-    font-size: 1rem;
-    color: #FFF
-}
-
-.btn-back-to-top.back-to-top-fade-out,
-.btn-back-to-top.back-to-top-is-visible,
-.no-touch .btn-back-to-top:hover {
-    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
-    transition: opacity 0.3s 0s, visibility 0s 0s
-}
-
-.btn-back-to-top.back-to-top-is-visible {
-    visibility: visible;
-    opacity: 1
-}
-
-.btn-back-to-top.back-to-top-fade-out {
-    opacity: 0.8
-}
-
-.no-touch .btn-back-to-top:hover {
-    background-color: #e86256;
-    opacity: 1
+@keyframes whats {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 10px, 0); }
 }
 
 @media only screen and (min-width: 768px) {
     .btn-back-to-top {
         right: 20px;
         bottom: 20px
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .btn-back-to-top {
-        height: 40px;
-        width: 40px;
-        right: 30px;
-        bottom: 30px;
-        line-height: 40px
     }
 }
 
@@ -8576,7 +8528,7 @@ svg#bigTriangleColor {
         -o-transform: none;
         -ms-transform: none;
         -webkit-transform: none;
-        transform: none
+        transform: none;
     }
 }
 
@@ -22449,7 +22401,7 @@ pre {
         font-size: 3.5vw !important
     }
     .background-image-holder .heading-xl {
-        font-size: 4.75vw !important
+        font-size: 2rem !important;
     }
     .background-image-holder .heading-xxl.heading-responsive {
         font-size: 6vw !important
