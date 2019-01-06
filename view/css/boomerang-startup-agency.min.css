@@ -1752,9 +1752,17 @@
 
 @media (max-width: 991px) {
     .navbar {
-        padding-top: 0.875rem;
-        padding-bottom: 0.875rem
+        padding: 0rem;
     }
+
+    .swiper-container {
+        overflow: inherit;
+    }
+
+    .slice--offset-top {
+        padding-top: 0px !important;
+    }
+
     .navbar-collapse {
         margin-top: 1.5rem;
         border-top: 1px solid rgba(0, 0, 0, 0.1)
@@ -2102,8 +2110,8 @@ a:hover {
 }
 
 .slice {
-    padding-bottom: 4rem;
-    position: relative
+    padding-bottom: 6rem;
+    position: relative;
 }
 
 .slice-xs {
@@ -2143,7 +2151,7 @@ a:hover {
 }
 
 .slice--offset-top {
-    padding-top: 6rem !important
+    padding-top: 6rem;
 }
 
 .slice--offset-bottom {
@@ -2429,13 +2437,13 @@ a:hover {
     right: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 
-    animation: whats 0.5s;
+    animation: btna 0.5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5,0.05,1,.5);
     animation-iteration-count: infinite;
 }
 
-@keyframes whats {
+@keyframes btna {
     from { transform: translate3d(0, 0, 0);     }
     to   { transform: translate3d(0, 10px, 0); }
 }
@@ -2999,6 +3007,10 @@ h6 {
         font-size: 3.75rem !important
     }
     .heading-responsive.heading-xxl {
+        font-size: 2.5rem !important
+    }
+
+    .heading-xl {
         font-size: 2.5rem !important
     }
 }
@@ -8306,11 +8318,11 @@ svg#bigTriangleColor {
     top: auto;
     left: 0;
     right: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 150px;
     z-index: 2;
     transform: translateZ(0);
-    overflow: hidden
+    overflow: hidden;
 }
 
 .shape-container[data-shape-position="top"] {
@@ -8320,8 +8332,82 @@ svg#bigTriangleColor {
 }
 
 .shape-container[data-shape-position="bottom"] {
-    top: auto;
-    bottom: 0
+    bottom: 0px;
+    height: 150px;
+}
+
+@media (min-width: 320px) {
+    .shape-container[data-shape-position="bottom"] {
+        bottom: -44%;
+        height: 350px;
+    }
+
+    .shape-container[data-shape-position="top"] {
+        top: -26%;
+        height: 200px;
+    }
+}
+
+@media (min-width: 375px) {
+    .shape-container[data-shape-position="bottom"] {
+        bottom: -46%;
+        height: 350px;
+    }
+
+    .shape-container[data-shape-position="top"] {
+        top: -29%;
+        height: 200px;
+    }
+}
+
+@media (min-width: 425px) {
+    .shape-container[data-shape-position="bottom"] {
+        bottom: -49%;
+        height: 350px;
+    }
+
+    .shape-container[data-shape-position="top"] {
+        top: -32%;
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .shape-container[data-shape-position="bottom"] {
+        bottom: 0px;
+        height: 150px;
+    }
+
+    .shape-container[data-shape-position="top"] {
+        top: -5%;
+        height: 135px;
+    }
+
+    .sm-top-50 {
+        padding-top: 80px !important;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .shape-container[data-shape-position="top"] {
+        top: -2px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sm-top-20 {
+        padding-top: 20px;
+    }
+
+    .sm-top-50 {
+        padding-top: 50px;
+    }
+
+    .sm-bot-50 {
+        padding-bottom: 50px;
+    }
 }
 
 .shape-container .shape-item {
@@ -8375,7 +8461,7 @@ svg#bigTriangleColor {
 
 @media only screen and (max-width: 767px) {
     .shape-container .shape-item {
-        height: 33%
+        height: 33%;
     }
 }
 
