@@ -8372,6 +8372,13 @@ svg#bigTriangleColor {
     }
 }
 
+@media (min-width: 530px) {
+    .shape-container[data-shape-position="bottom"] {
+        bottom: -52%;
+        height: 350px;
+    }
+}
+
 @media (min-width: 768px) {
     .shape-container[data-shape-position="bottom"] {
         bottom: 0px;
