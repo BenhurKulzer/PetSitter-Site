@@ -13,6 +13,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="view/css/bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/float-icon/float.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
@@ -91,7 +92,7 @@
                             </nav>
                         </div>
 
-                        <section class="slice slice--offset-top bg-base-1" style="background-image: url(https://i.imgur.com/tZ4FbTD.jpg);background-position: bottom center;">
+                        <section class="slice slice--offset-top bg-base-1 bg-size-cover" style="background-image: url(https://i.imgur.com/tZ4FbTD.jpg);background-position: bottom center;">
                             <span class="mask mask-base-1--style-1"></span>
                             <div class="container">
                                 <div class="row">
@@ -468,7 +469,33 @@
     <!-- END: body-wrap -->
 
     <!-- SCRIPTS -->
+    <div class="zoom" style="z-index: 99;">
+        <a class="zoom-fab zoom-btn-large" id="zoomBtn">
+            <img src="https://image.flaticon.com/icons/svg/813/813020.svg">
+        </a>
+        <ul class="zoom-menu">
+            <li>
+                <a href="http://api.whatsapp.com/send?phone=555195266290" class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out" data-toggle="tooltip" data-placement="top" title="WhatsApp">
+                    <img src="https://image.flaticon.com/icons/svg/220/220236.svg">
+                </a>
+            </li>
 
+            <li>
+                <a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out" data-toggle="tooltip" data-placement="top" title="Instagram">
+                    <img src="https://image.flaticon.com/icons/svg/185/185985.svg">
+                </a>
+            </li>
+
+            <li>
+                <a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out" data-toggle="tooltip" data-placement="top" title="Messenger">
+                    <img src="https://image.flaticon.com/icons/svg/889/889101.svg">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script src="view/js/float-icon/float.js"></script>
     
     <!-- Core -->
     <script src="https://preview.webpixels.io/boomerang-v3.6.1/assets/vendor/jquery/jquery.min.js"></script>
