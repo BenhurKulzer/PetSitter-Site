@@ -162,41 +162,59 @@
                         <section class="sct-color-1">
                             <div class="container container-lg">
                                 <div class="row cols-xs-space cols-sm-space cols-md-space">
-                                    <div class="col-lg-12">
+                                    <div class="offset-2 col-lg-8">
 
                                     	<form>
                                     		<div class="row">
-                                    			<div class="col-md-4 mb-3">
-                                    				<label for="validationServer01">Nome Completo</label>
-                                    				<input type="text" class="form-control form-control-lg is-valid" id="validationServer01" placeholder="Nome Completo" required>
+                                    			<div class="col-md-12 mb-3">
+                                    				<label>Nome Completo</label>
+                                    				<input type="text" class="form-control form-control-lg" placeholder="Nome Completo" required>
                                     			</div>
                                     			
-                                    			<div class="col-md-4 mb-3">
-                                    				<label for="validationServer02">E-Mail</label>
-                                    				<input type="text" class="form-control form-control-lg is-valid" id="validationServer02" placeholder="E-Mail" required>
+                                    			<div class="col-md-6 mb-3">
+                                    				<label>Telefone</label>
+                                    				<input type="text" class="form-control form-control-lg input-mask" data-mask="(00) 0000 00000" placeholder="Número de telefone" required>
+
                                     			</div>
 
-                                    			<div class="col-md-4 mb-3">
-                                    				<label for="validationServer02">E-Mail</label>
-                                    				<input type="text" class="form-control form-control-lg is-valid" id="validationServer02" placeholder="E-Mail" required>
+                                    			<div class="col-md-6 mb-3">
+                                    				<label>E-Mail</label>
+                                    				<input type="text" class="form-control form-control-lg" placeholder="Seu endereço de E-Mail" required>
                                     			</div>
                                     		</div>
 
                                     		<div class="row">
                                     			<div class="col-md-6">
-                                    				<div class="checkbox checkbox-primary">
-                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1f" checked="checked">
+                                    				<div class="checkbox">
+                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1f">
                                     					<label for="checkboxExample_1f">Cães</label>
                                     				</div>
 
-                                    				<div class="checkbox checkbox-success">
-                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1g" checked="checked">
+                                    				<div class="checkbox">
+                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1g">
                                     					<label for="checkboxExample_1g">Gatos</label>
                                     				</div>
 
-                                    				<div class="checkbox checkbox-warning">
-                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1h" checked="checked">
+                                    				<div class="checkbox">
+                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1h">
                                     					<label for="checkboxExample_1h">Outros Animais</label>
+                                    				</div>
+                                    			</div>
+
+                                    			<div class="col-md-6">
+                                    				<div class="col-md-12 mb-3">
+		                                				<label>Quantidade de Cães</label>
+		                                				<input type="numer" class="form-control form-control-lg" placeholder="Quantidade">
+		                                			</div>
+
+                                    				<div class="col-md-12 mb-3">
+                                    					<label>Quantidade de Gatos</label>
+		                                				<input type="numer" class="form-control form-control-lg" placeholder="Quantidade">
+                                    				</div>
+
+                                    				<div class="col-md-12 mb-3">
+                                    					<label>Quantidade de Animais</label>
+		                                				<input type="numer" class="form-control form-control-lg" placeholder="Quantidade">
                                     				</div>
                                     			</div>
                                     		</div>
@@ -215,17 +233,15 @@
                                     			<div class="col-md-6 mb-3">
                                     				<label>Hora Inicial</label>
 												    <input type="text" class="form-control form-control-lg datepicker" data-datepicker-enable-time="true" data-datepicker-no-calendar="true" placeholder="Hora Inicio">
-
                                     			</div>
 
                                     			<div class="col-md-6 mb-3">
                                     				<label>Hora Final</label>
 												    <input type="text" class="form-control form-control-lg datepicker" data-datepicker-enable-time="true" data-datepicker-no-calendar="true" placeholder="Hora Fim">
-
                                     			</div>
                                     		</div>
 
-                                    		<button class="btn btn-primary" type="submit">Submit form</button>
+                                    		<button class="btn btn-primary" type="submit">Solicitar Orçamento</button>
                                     	</form>
 
                                 	</div>

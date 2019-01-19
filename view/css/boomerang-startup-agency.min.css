@@ -9261,9 +9261,9 @@ select.form-control-lg:not([size]):not([multiple]) {
     height: 20px;
     left: 0;
     top: 0;
-    margin-left: -15px;
-    padding-left: 3px;
-    padding-top: 0;
+    margin-left: -12px;
+    padding-left: 2px;
+    padding-top: 1px;
     font-size: 12px;
     color: transparent
 }
@@ -9282,8 +9282,8 @@ select.form-control-lg:not([size]):not([multiple]) {
 .checkbox input[type="checkbox"]:checked+label::after,
 .checkbox input[type="radio"]:checked+label::after {
     color: #e7bdb1;
-    font-family: "FontAwesome";
-    content: "\f00c"
+    font-family: "sans-serif";
+    content: "X"
 }
 
 .checkbox input[type="checkbox"]:disabled+label,
