@@ -22563,3 +22563,16 @@ pre {
 .icons-holder .mobile {
     font-size: 34px
 }
+
+/* /////////////////////////
+
+toggle do formulário nibelungen
+
+///////////////////////// */
+img .img-thumbnail .img-check {
+    filter: grayscale(100);
+}
+
+input[type=checkbox] {
+    display: none;
+}

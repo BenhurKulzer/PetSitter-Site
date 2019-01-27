@@ -159,7 +159,9 @@
                             </div>
                         </section>
 
-                        <section class="sct-color-1">
+                        <hr>
+
+                        <section class="sct-color-1 pt-5 pb-5">
                             <div class="container container-lg">
                                 <div class="row cols-xs-space cols-sm-space cols-md-space">
                                     <div class="offset-2 col-lg-8">
@@ -184,39 +186,64 @@
                                     		</div>
 
                                     		<div class="row">
-                                    			<div class="col-md-6">
+                                    			<div class="col-md-12">
                                     				<div class="checkbox">
-                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1f">
-                                    					<label for="checkboxExample_1f">Cães</label>
-                                    				</div>
+                                                        <div class="col-md-4">
+                                        					<input type="checkbox" name="txtCaesC" id="txtCaesC">
+                                        					<label for="txtCaesC">Cães</label>
+                                                        </div>
 
-                                    				<div class="checkbox">
-                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1g">
-                                    					<label for="checkboxExample_1g">Gatos</label>
-                                    				</div>
+                                                        <div class="col-md-4">
+                                        					<input type="checkbox" name="txtGatosC" id="txtGatosC">
+                                                            <label for="txtGatosC">Gatos</label>
+                                                        </div>
 
-                                    				<div class="checkbox">
-                                    					<input type="checkbox" name="checkbox_example_1" id="checkboxExample_1h">
-                                    					<label for="checkboxExample_1h">Outros Animais</label>
+                                                        <div class="col-md-4">
+                                        					<input type="checkbox" name="txtOutrosC" id="txtOutrosC">
+                                                            <label for="txtOutrosC">Outros Animais</label>
+                                                        </div>
                                     				</div>
                                     			</div>
 
-                                    			<div class="col-md-6">
-                                    				<div class="col-md-12 mb-3">
-		                                				<label>Quantidade de Cães</label>
-		                                				<input type="numer" class="form-control form-control-lg" placeholder="Quantidade">
-		                                			</div>
+                                                <div class="col-md-4">
+                                                    <div>
+                                                        <span>Cães</span>
+                                                    </div>
 
-                                    				<div class="col-md-12 mb-3">
-                                    					<label>Quantidade de Gatos</label>
-		                                				<input type="numer" class="form-control form-control-lg" placeholder="Quantidade">
-                                    				</div>
+                                                    <label>
+                                                        <img src="https://image.flaticon.com/icons/svg/616/616408.svg" class="img-thumbnail img-check" style='width: 100px;'>
+                                                        <input type="checkbox" name="chk2" id="item1" value="val1" class="hidden" autocomplete="off">
+                                                    </label>
 
-                                    				<div class="col-md-12 mb-3">
-                                    					<label>Quantidade de Animais</label>
-		                                				<input type="numer" class="form-control form-control-lg" placeholder="Quantidade">
-                                    				</div>
-                                    			</div>
+                                                    <input type="numer" class="form-control form-control-lg" name="QtdCaes" id="QtdCaes" placeholder="Quantidade de Cães" required="">
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div>
+                                                        <span>Gatos</span>
+                                                    </div>
+
+                                                    <label>
+                                                        <img src="https://image.flaticon.com/icons/svg/616/616430.svg" class="img-thumbnail img-check" style='width: 100px;'>
+                                                        <input type="checkbox" name="chk2" id="item2" value="val2" class="hidden" autocomplete="off">
+                                                    </label>
+
+                                                    <input type="numer" class="form-control form-control-lg" name="QtdGatos" id="QtdGatos" placeholder="Quantidade de Gatos" required="">
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div>
+                                                        <span>Outros Animais</span>
+                                                    </div>
+
+                                                    <label>
+                                                        <img src="view/img/brand/outros.png" class="img-thumbnail img-check" style='width: 100px;'>
+                                                        <input type="checkbox" name="chk3" id="item3" value="val3" class="hidden" autocomplete="off">
+                                                    </label>
+
+                                                    <input type="numer" class="form-control form-control-lg" name="QtdAnimais" id="QtdAnimais" placeholder="Quantidade de Animais" required="">
+                                                </div>
+
                                     		</div>
 
                                     		<div class="row">
@@ -426,6 +453,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
     <script src="view/js/float-icon/float.js"></script>
     
+    <script type="text/javascript">
+        $(function () {
+            $('input[name="QtdCaes"]').hide();
+
+            //show it when the checkbox is clicked
+            $('input[name="txtCaesC"]').on('click', function () {
+                if ($(this).prop('checked')) {
+                    $('input[name="QtdCaes"]').fadeIn();
+                } else {
+                    $('input[name="QtdCaes"]').hide();
+                }
+            });
+        });
+
+        ////////////////////////////////////
+
+        $(function () {
+            $('input[name="QtdGatos"]').hide();
+
+            //show it when the checkbox is clicked
+            $('input[name="txtGatosC"]').on('click', function () {
+                if ($(this).prop('checked')) {
+                    $('input[name="QtdGatos"]').fadeIn();
+                } else {
+                    $('input[name="QtdGatos"]').hide();
+                }
+            });
+        });
+
+        ////////////////////////////////////
+
+        $(function () {
+            $('input[name="QtdAnimais"]').hide();
+
+            //show it when the checkbox is clicked
+            $('input[name="txtOutrosC"]').on('click', function () {
+                if ($(this).prop('checked')) {
+                    $('input[name="QtdAnimais"]').fadeIn();
+                } else {
+                    $('input[name="QtdAnimais"]').hide();
+                }
+            });
+        });
+
+        //////////////////////////////////
+
+        $(document).ready(function(e){
+            $(".img-check").click(function(){
+                $(this).toggleClass("check");
+            });
+        });     
+    </script>
+
     <!-- Core -->
     <script src="https://preview.webpixels.io/boomerang-v3.6.1/assets/vendor/jquery/jquery.min.js"></script>
     <script src="https://preview.webpixels.io/boomerang-v3.6.1/assets/vendor/popper/popper.min.js"></script>
