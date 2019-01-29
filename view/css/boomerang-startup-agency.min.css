@@ -22569,10 +22569,14 @@ pre {
 toggle do formulário nibelungen
 
 ///////////////////////// */
-img .img-thumbnail .img-check {
+.img-check {
     filter: grayscale(100);
 }
 
 input[type=checkbox] {
     display: none;
+}
+
+.check {
+    filter: grayscale(0) !important;
 }
