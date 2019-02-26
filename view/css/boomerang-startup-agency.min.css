@@ -2783,16 +2783,16 @@ a {
 }
 
 .link--style-1:hover {
-    color: #e7bdb1
+    color: #257580
 }
 
 .link--style-2 {
-    color: #e7bdb1 !important
+    color: #4dadba !important;
 }
 
 .link--style-2:hover {
-    color: #e7bdb1 !important;
-    text-decoration: underline !important
+    color: #4dadba !important;
+    text-decoration: underline !important;
 }
 
 .link--style-3 {
@@ -6052,8 +6052,8 @@ a>.block {
 .btn-base-1.active,
 .btn-base-1:focus,
 .btn-base-1:hover {
-    background-color: #500a82;
-    color: #FFF
+    background-color: #2f8894;
+    color: #FFF;
 }
 
 .btn-base-1.btn-outline {
@@ -22566,7 +22566,7 @@ pre {
 
 /* /////////////////////////
 
-toggle do formulário nibelungen
+toggle do formulÃ¡rio nibelungen
 
 ///////////////////////// */
 .img-check {
